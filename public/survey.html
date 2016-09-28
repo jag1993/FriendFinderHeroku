@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder -- Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles/styles_survey.css">
+</head>
+<body>
+<div class="container">
+  <div class="text-center">
+	<h1>Questions</h1>
+	<h3>About You</h3>
+	<h4>Name</h4>
+
+	<input type="text" class="form-control" name="" id="name" required="">
+
+	<h4>Link to Photo</h4>
+	<input type="text" class="form-control" name="" id="photo" required="">
+
+	<h4>Do you like pizza?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q1">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+    	<h4>Do you like video games?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q2">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>  	
+
+
+   	<h4>Do you like pizza and video games?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q3">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+   	<h4>Do you like watching horror movies?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q4">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+	<h4>Do you like talking on AOL?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q5">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+     <h4>Do you listen to the radio?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q6">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+     <h4>Do you like art?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q7">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+      <h4>Do you like MTV?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q8">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+      <h4>Did you like playing with Pokemon or Polly Pockets?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q9">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+
+       <h4>Do you like Gameboys?</h4>
+	 	<select data-placeholder="" class="form-control"  id="q10">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Hate)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Like)</option>
+      	</select>
+      	</br>
+      	<button type="submit" class="btn btn-success btn-block" id="submit">Submit</button>
+        <button  class="btn btn-success btn-block" id="show">Show</button> </br>
+
+        <h1><a href="home.html"> Home</a></h1>
+  </div>
+
+</div>
+
+
+
+<!-- MODAL Match -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+        <h4 class="modal-title">Your Match</h4>
+      </div>
+      <div class="modal-body" id="results">
+
+      <h3 id="nameFriend"></h3>
+      <img src="" id="photoFriend">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- MODAL Match -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+        <h4 class="modal-title">Potential Matches</h4>
+      </div>
+      <div class="modal-body" id="potentialMatches" style="overflow:scroll;">
+
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </br>
+
+
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/app.js"> </script>
+
+
+
+</body>
+</html>

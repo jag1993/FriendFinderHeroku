@@ -1,0 +1,18 @@
+body{
+	background-image: url(images/background.jpg);
+	color:pink;
+	 background-size: 100% 100%;
+}
+.btn{
+	margin-bottom:30px;
+}
+
+img{
+	width:450px;
+	height:300px;
+}
+
+a:hover { 
+    background-color: white;
+    border:solid;
+}

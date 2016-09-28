@@ -1,0 +1,22 @@
+body{
+	background-image: url(images/background2.jpg);
+	background-repeat: no-repeat;
+	color:pink;
+}
+
+.welcome{
+	font-size: 80px;
+}
+
+.link{
+	font-size:60px;
+}
+
+a:hover { 
+    background-color: white;
+    border:solid;
+}
+
+.main{
+	margin-top:200px;
+}
