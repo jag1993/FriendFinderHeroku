@@ -6,6 +6,7 @@
   > 1. This is a personality quiz that matches you with characters from the show Daria
   > 2. Answer the questions and hit send
   > 3. Enjoy!
+
 ## Technologies Used
   > 1. HTML
   > 2. CSS & Bootstrap
